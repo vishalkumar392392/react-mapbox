@@ -28,6 +28,13 @@ function MapComponent() {
       });
     };
 
+    const afterClosePopup = () => {
+      setPopupInfo(null)
+      myMapA.flyTo({
+        center: [-121.499908,38.578433],
+        zoom:12.5
+      });
+    }
   
     const handlePopupInfo = (city) => {
       setPopupInfo(city);
@@ -75,9 +82,7 @@ function MapComponent() {
               latitude={popupInfo.providerAddress[0].lat}
               longitude={popupInfo.providerAddress[0].lon}
               closeOnClick={false}
-              onClose={() => {
-                setPopupInfo(null);
-              }}
+              onClose={() => afterClosePopup()}
             >
               <div>
                 <h2>{popupInfo.providerAddress[0].addline1}</h2>
