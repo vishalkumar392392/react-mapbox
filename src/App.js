@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React, { useState } from "react";
+import MapComponent from "./components/map/Map";
+import Content from "./components/contents/Content";
+import './index.css'
 
 function App() {
+
+  const [res, setResponse] = useState(null);
+  const zoomHandler = (data) => {
+    setResponse(res);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="model">
+        <Content zoomHandler={zoomHandler}/>
+        <MapComponent res={res}/>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;

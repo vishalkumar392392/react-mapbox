@@ -1,0 +1,25 @@
+.card {
+    padding: 24px 18px;
+    /* margin: 0; */
+    border:0.5px solid #808080;
+    transition: transform 0.5s ease-out;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    border: none;
+}
+
+.content {
+    overflow: scroll;
+    background-color: rgb(250, 246, 246);
+    height: auto;
+}
