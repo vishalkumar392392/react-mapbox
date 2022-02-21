@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import MapComponent from "./components/map/Map";
 import Content from "./components/contents/Content";
 import './index.css'
+import { MapProvider } from "react-map-gl";
 
 function App() {
 
@@ -14,8 +15,10 @@ function App() {
   return (
     <div>
       <div className="model">
+        <MapProvider>
         <Content zoomHandler={zoomHandler}/>
         <MapComponent res={res}/>
+        </MapProvider>
       </div>
     </div>
   )
