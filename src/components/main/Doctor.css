@@ -1,0 +1,65 @@
+.doctor {
+  width: 800px;
+  margin: 4rem auto;
+}
+
+.doctor h3 {
+  margin-bottom: 10px;
+}
+
+.doctor-card {
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+.doctor ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  /* grid-template-columns: 0.1fr  1.5fr 1fr; */
+  grid-template-columns: auto 1.3fr 1fr;
+  align-items: center;
+  gap: 20px 30px;
+}
+
+.paragraph {
+  color: rgb(131, 131, 134);
+}
+
+.dropdown {
+  padding: 2px 4px;
+  margin: 0 6px;
+  text-align: center;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: 1px solid rgb(184, 184, 184);
+}
+
+.para {
+  font-size: 16px;
+  word-spacing: 2px;
+  margin: 20px 0;
+}
+
+.footer {
+  margin-top: 2rem;
+}
+
+.footer button {
+  color: rgb(26, 124, 163);
+  margin-right: 10px;
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+  font-size: 16px;
+  padding: 0;
+}
+
+.footer button:hover {
+  cursor: pointer;
+}
+
+.footer button:nth-last-of-type(1) {
+  margin-left: 10px;
+}

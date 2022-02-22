@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import data from "../../data/sample.json";
 import "./content.css";
 import { Scrollbars } from "react-custom-scrollbars-2";
@@ -7,12 +7,6 @@ import { useMap } from "react-map-gl";
 const Content = ({ zoomHandler }) => {
 
   const { myMapA } = useMap();
-
-  useEffect(() => {
-    if (!myMapA) {
-      return undefined;
-    }
-  });
 
   const flyTo = (doctor) => {
     myMapA.flyTo({
@@ -28,8 +22,6 @@ const Content = ({ zoomHandler }) => {
       className="card"
       onClick={() => {
         flyTo(doctor);
-        // dispatch(mapActions.updateMap({lat:doctor.providerAddress[0].lat,lon:doctor.providerAddress[0].lon}))
-        // zoomHandler({lat:doctor.providerAddress[0].lat,lon:doctor.providerAddress[0].lon})}}
       }}
     >
       <h2>{doctor.name}</h2>
