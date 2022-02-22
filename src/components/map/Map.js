@@ -53,8 +53,7 @@ function MapComponent() {
           }}
           mapboxAccessToken="pk.eyJ1IjoidmlzaGFsa3VtYXIzOTIiLCJhIjoiY2t6czlibHZ1NDlxcTJ5bnJqdnBua2tlZiJ9.udJvqdKsdqEMt7dNcWdnvQ"
           mapStyle="mapbox://styles/vishalkumar392/ckzs9ooyu009o15npb90uf13m"
-          // mapStyle="mapbox://styles/mapbox/dark-v9"
-          style={{ width: "100vw", height: "100vh" }}
+          style={{ width: "60vw", height: "70vh" }}
         >
           <GeolocateControl position="top-left" />
           <FullscreenControl position="top-left" />

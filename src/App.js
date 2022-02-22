@@ -1,25 +1,12 @@
-
-import React, { useState } from "react";
-import MapComponent from "./components/map/Map";
-import Content from "./components/contents/Content";
+import React from "react";
 import './index.css'
-import { MapProvider } from "react-map-gl";
+import Doctor from "./components/main/Doctor";
 
 function App() {
 
-  const [res, setResponse] = useState(null);
-  const zoomHandler = (data) => {
-    setResponse(res);
-  }
-
   return (
     <div>
-      <div className="model">
-        <MapProvider>
-        <Content zoomHandler={zoomHandler}/>
-        <MapComponent res={res}/>
-        </MapProvider>
-      </div>
+        <Doctor/>
     </div>
   )
 }
