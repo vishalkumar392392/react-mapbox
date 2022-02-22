@@ -71,7 +71,11 @@ function MapComponent() {
               handlePopupInfo(city)
             }}
             >
-              <LocationOnIcon style={{color:"red",width:"32px",height:"32px"}} />
+              <LocationOnIcon 
+              color="error" 
+              // style={{color:"red"}}
+              fontSize='large'
+               />
               </IconButton>
           </Marker>
         ))}

@@ -9,7 +9,7 @@
 
 .doctor-card {
   margin-left: 2rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .doctor ul {
@@ -54,10 +54,14 @@
   text-decoration: underline;
   font-size: 16px;
   padding: 0;
+  text-transform: none;
 }
 
 .footer button:hover {
   cursor: pointer;
+  background-color: white;
+  text-decoration: underline;
+
 }
 
 .footer button:nth-last-of-type(1) {
